@@ -1,0 +1,21 @@
+p::first-letter{
+    font-style: italic;
+}
+.me{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    padding: 10px;
+    margin: 100px;
+    border-style: ridge;
+}
+.m{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(15, 224, 155);
+}
+.e{
+    width: 100px;
+    height: 100px;
+    background-color:aqua;
+}

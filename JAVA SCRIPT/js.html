@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        /*var name=prompt("enter your name:");
+        alert(name)
+        var age=prompt("enter your age:");
+        if(18>age){
+            console.log("you are not allowed","<br/>")
+            document.write("you are not allowed","<br/>")
+        }
+        else{
+            console.log("you are welcome","<br/>") 
+            document.write("you are welcome","<br/>")
+        }
+        var date=new Date();
+        document.write(date.getDate(),"<br/>");
+        document.write(date.getFullYear(),"<br/>");
+        document.write(date.getDay(),"<br/>");
+        var x=prompt("enter the number:");
+        for(i=0;i<=11;i++){
+            //document.write(i,"<br/>")
+            document.write(x," * ",i," = ",x*i ,"<br/>")
+        }
+        var myList=["item","item2","kalyan","lavada"]
+        document.write(myList,"<br/>");
+        document.write(myList[3]);
+        var range=10;
+        var randomNo=Math.floor(math.random()*range);
+        document.write(randomNo);
+        function sum(a,b){
+             return a+b;
+        }
+        document.write(sum(10,20));*/
+        function getData(){
+            var txt=document.getElementById("inputvalue").value
+            document.getElementById("inputvalue").innerHTML=txt;
+            document.write(txt);
+        }
+
+    </script>
+    <h2>Java</h2>
+    <h1 id="main"></h1>
+    <!--<label for="username">Username</label>
+    <input type="text" id="inputvalue">-->
+    <input type="button" onclick="getData()">
+    <button onclick="alert('hello')">onclick</button>
+    <button onmouseover="alert('hi')">onhover</button>
+    <u>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </u>
+</body>

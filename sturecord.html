@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Record Form</title>
+	<script>
+		function validateForm() {
+			// Get form inputs
+			var name = document.forms["recordForm"]["name"].value;
+			var rollNumber = document.forms["recordForm"]["rollNumber"].value;
+			var email = document.forms["recordForm"]["email"].value;
+			var phone = document.forms["recordForm"]["phone"].value;
+
+			// Validate inputs
+			if (name == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+
+			if (rollNumber == "") {
+				alert("Roll Number must be filled out");
+				return false;
+			}
+
+			if (email == "") {
+				alert("Email must be filled out");
+				return false;
+			}
+
+			if (phone == "") {
+				alert("Phone must be filled out");
+				return false;
+			}
+
+			// Validate email format
+			var emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+			if (!emailPattern.test(email)) {
+				alert("Invalid email format");
+				return false;
+			}
+
+			// Validate phone format
+			var phonePattern = /^\d{10}$/;
+			if (!phonePattern.test(phone)) {
+				alert("Invalid phone number");
+				return false;
+			}
+
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h1>Student Record Form</h1>
+	<form name="recordForm" onsubmit="return validateForm()">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+
+		<label for="rollNumber">Roll Number:</label>
+		<input type="text" id="rollNumber" name="rollNumber"><br><br>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email"><br><br>
+
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone"><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
